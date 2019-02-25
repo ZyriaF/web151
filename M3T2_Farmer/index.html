@@ -1,0 +1,37 @@
+<!--
+WEB 151
+M2LAB
+Farmer
+2/13/19
+-->
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<h1>Hello World</h1>
+		
+		<script>
+		var randomBodyPart = ["Butt","Hand","Foot"];
+		var randomAdjective = ["Stinky","Lazy","Stupid"];
+		var randomWord = ["Fly's", "Marmot's", "Tick's", "Monkey's", "Rat's"];
+		var randomAnimalBodyPart = ["Belly","Ear","Paw","Butt","Finger"];
+		
+		//Pick a random body part from the randomBodyParts array
+		var randomBodyPart = randomBodyPart[Math.floor(Math.random() *3)];
+		//Pick a random adjective from the randomAdjectives array
+		var randomAdjective = randomAdjective[Math.floor(Math.random() *3)];
+		//Pick a random word from the randomWords array
+		var randomWord = randomWord[Math.floor(Math.random() *5)];
+		//Pick a random word from the randomAnimalBodyPart array
+		var randomAnimalBodyPart = randomAnimalBodyPart[Math.floor(Math.random() *5)];
+		//Join all the random strings into a sentence
+		var randomInsult = "Your " + randomBodyPart + " is more " + randomAdjective + " than a " + randomWord + " " + randomAnimalBodyPart;
+		document.write(randomInsult);
+	
+		
+	    </script>
+	</body>
+
+</html>
